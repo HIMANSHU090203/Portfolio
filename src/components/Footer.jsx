@@ -9,7 +9,7 @@ export default function Footer() {
           © {year} {profile.name}. All rights reserved.
         </p>
         <p className="text-zinc-400 dark:text-zinc-500">
-          Built with React, Vite, and Tailwind CSS.
+          Built with React, Vite, Tailwind CSS, and Framer Motion.
         </p>
       </div>
     </footer>

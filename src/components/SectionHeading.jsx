@@ -7,10 +7,10 @@ export default function SectionHeading({ eyebrow, title, description }) {
             {eyebrow}
           </p>
         ) : null}
-        <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">{title}</h2>
+        <h2 className="max-w-3xl text-2xl font-semibold tracking-tight md:text-4xl">{title}</h2>
       </div>
       {description ? (
-        <p className="max-w-2xl text-zinc-600 dark:text-zinc-300">{description}</p>
+        <p className="max-w-xl leading-7 text-zinc-600 dark:text-zinc-300">{description}</p>
       ) : null}
     </div>
   );

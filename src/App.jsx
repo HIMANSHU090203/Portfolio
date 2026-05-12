@@ -1,12 +1,14 @@
 import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
 import About from "./components/About.jsx";
+import ExperienceSection from "./components/ExperienceSection.jsx";
 import SkillsGrid from "./components/SkillsGrid.jsx";
 import ProjectsSection from "./components/ProjectsSection.jsx";
 import PublicationCard from "./components/PublicationCard.jsx";
 import CertificationsCard from "./components/CertificationsCard.jsx";
 import ContactSection from "./components/ContactSection.jsx";
 import Footer from "./components/Footer.jsx";
+import MotionSection from "./components/MotionSection.jsx";
 
 export default function App() {
   return (
@@ -15,9 +17,10 @@ export default function App() {
       <main className="mx-auto max-w-6xl px-6 md:px-8">
         <Hero />
         <About />
+        <ExperienceSection />
         <SkillsGrid />
         <ProjectsSection />
-        <section
+        <MotionSection
           id="publication"
           className="scroll-mt-20 py-16 md:scroll-mt-24 md:py-24"
           aria-label="Publication and certifications"
@@ -26,7 +29,7 @@ export default function App() {
             <PublicationCard />
             <CertificationsCard />
           </div>
-        </section>
+        </MotionSection>
         <ContactSection />
       </main>
       <Footer />

@@ -1,10 +1,12 @@
 export const profile = {
   name: "Himanshu Sharma",
-  role: "Research and Development Engineer",
+  role: "Full-Stack Developer & R&D Engineer",
   summary:
-    "Research and Development Engineer building full-stack products, AI-assisted workflows, and system-driven applications.",
+    "Building AI-powered applications, scalable backend systems, and modern user-focused products.",
   heroBody:
-    "Currently working at Sky AI, contributing across frontend, backend, APIs, and product-focused engineering in a startup environment. Experienced with React, FastAPI, Node.js, PostgreSQL, Electron, and AI-integrated product features across beauty-tech, healthcare, and control-system workflows.",
+    "I work across React, FastAPI, TypeScript, PostgreSQL, and Electron to turn product ideas into usable software. My recent work spans AI-assisted beauty-tech, hospital management workflows, and ground-control interfaces in startup-style engineering environments.",
+  currentFocus:
+    "Currently working on scalable AI-assisted systems and product workflows that connect frontend interfaces, backend APIs, databases, and automation.",
   email: "sharmajay9982@gmail.com",
   phone: "+91-7023582952",
   location: "Jaipur, Rajasthan, India",
@@ -22,4 +24,4 @@ export const publication = {
 };
 
 export const contactIntro =
-  "Open to software engineering, full-stack development, backend engineering, and product-oriented opportunities.";
+  "Open to full-stack, frontend, backend, AI-product, and R&D engineering opportunities where I can own features and ship practical software.";

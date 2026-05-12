@@ -1,27 +1,32 @@
 import SectionHeading from "./SectionHeading.jsx";
+import MotionSection from "./MotionSection.jsx";
 
 const stats = [
   {
-    label: "Stack breadth",
-    value: "Full-stack",
-    detail: "UI, services, data, and shipping features end to end.",
+    label: "Engineering identity",
+    value: "Product-minded",
+    detail: "Builds around user workflows, business value, and maintainable systems.",
   },
   {
     label: "Featured work",
     value: "3 projects",
-    detail: "SkinDB, ZenHosp, and AeroHive GCS highlighted below.",
+    detail: "AI product discovery, hospital operations, and ground-control interfaces.",
   },
   {
-    label: "Domains",
-    value: "Multi-sector",
-    detail: "Beauty-tech, healthcare, and control-system contexts.",
+    label: "Stack coverage",
+    value: "End to end",
+    detail: "React interfaces, APIs, database workflows, and desktop applications.",
   },
 ];
 
 export default function About() {
   return (
-    <section id="about" className="scroll-mt-20 py-16 md:scroll-mt-24 md:py-24">
-      <SectionHeading title="About" />
+    <MotionSection id="about" className="scroll-mt-20 py-16 md:scroll-mt-24 md:py-24">
+      <SectionHeading
+        eyebrow="About"
+        title="From projects to engineering problems"
+        description="The portfolio is focused on practical systems, product workflows, and full-stack execution."
+      />
       <div className="max-w-3xl space-y-6 text-base leading-7 text-zinc-600 dark:text-zinc-300">
         <p>
           Research and Development Engineer with hands-on experience building practical software
@@ -30,17 +35,16 @@ export default function About() {
           product-oriented engineering in startup environments.
         </p>
         <p>
-          A strong interest lies in building reliable software that balances technical depth,
-          usability, and business value. Comfortable working across multiple parts of the stack,
-          from frontend implementation and backend services to database-driven workflows and
-          feature delivery.
+          I am strongest when a product needs more than screens: understanding the workflow,
+          shaping the API contract, connecting persistent data, and turning technical decisions
+          into a user experience that feels reliable.
         </p>
       </div>
       <div className="mt-10 grid gap-4 sm:grid-cols-3">
         {stats.map((s) => (
           <div
             key={s.label}
-            className="rounded-2xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900"
+            className="rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm shadow-zinc-200/60 transition hover:-translate-y-1 hover:border-teal-200 dark:border-zinc-800 dark:bg-zinc-900 dark:shadow-black/20 dark:hover:border-teal-900"
           >
             <p className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
               {s.label}
@@ -52,6 +56,6 @@ export default function About() {
           </div>
         ))}
       </div>
-    </section>
+    </MotionSection>
   );
 }
